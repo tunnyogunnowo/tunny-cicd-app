@@ -42,7 +42,7 @@ pipeline {
             }
             steps {
                 sh 'npm install netlify-cli'
-                sh 'node_modules/.bin/netlify deploy --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --prod --dir=build'
+                sh 'node_modules/.bin/netlify deploy --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --prod --dir=build --no-build'
             }
         }
     }
